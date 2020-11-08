@@ -1,0 +1,395 @@
+/* example/tabbar/tabbar.wxss */
+@import '../common.wxss';
+
+@media only screen and (min-width: 450px) {
+  .page__hd {
+    margin-left: 60px;
+    height: 100%;
+  }
+
+  .tabbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: unset;
+    height: 100%;
+    left: 0;
+    right: unset;
+  }
+}
+
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/*tab页*/
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  /* background: #F7F7F7; */
+  background-color: #ffffff;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.tab-item {
+  margin: 0 36rpx;
+  width: 23%;
+  display: inline-block;
+}
+
+.tab-item.active {
+  font-weight: bolder;
+  color: #06ae56;
+  position: relative;
+}
+
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 120rpx;
+  background: #06ae56;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #B0B0B0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 60rpx;
+  border: 1px solid #4675F9;
+  color: #4675F9;
+}
+
+.tab-content {
+  margin-top: 80rpx;
+}
+
+.scoll-h {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*轮播*/
+.u-wrp-bnr {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 100px;
+  width: 95%;
+  display: block;
+  position: relative;
+}
+
+.u-img-slide {
+  width: 100%;
+  border-radius: 15px;
+  height: inherit;
+}
+
+.inform {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.274);
+  padding: 10px;
+}
+
+.table {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.desc {
+  color: rgba(0, 0, 0, 1);
+}
+
+/*死线抽绎*/
+.expressRecord {
+  width: 710rpx;
+  padding-top: 30rpx;
+  padding-bottom: 200rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+
+.expressRecord-getAddress {
+  position: relative;
+  top: -50px;
+  width: 100%;
+  font-size: 22rpx;
+  color: #999;
+  display: flex;
+}
+
+.expressRecord-top {
+  position: relative;
+  top: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.expressRecord-single-close {
+  padding-top: 0;
+  width: 100%;
+  height: 230rpx;
+  top: -30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.expressRecord-single-noReach-online-top-close {
+  display: flex;
+  flex-direction: column;
+}
+
+.online-top-closing {
+  width: 1rpx;
+  height: 50rpx;
+  background: #d7d7d7;
+  margin-left: 95rpx;
+}
+
+.online-top-close {
+  width: 2rpx;
+  height: 200rpx;
+  background: #999;
+  margin-left: 95rpx;
+}
+
+.dot-closing {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin-left: 90rpx;
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  background: #fe4f33;
+}
+
+.dot-close {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin-left: 90rpx;
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  background: #999;
+}
+
+.online-bottom {
+  width: 2rpx;
+  height: 50rpx;
+  background: #999;
+  margin-left: 95rpx;
+}
+
+.online-bottom-start {
+  width: 1rpx;
+  height: 50rpx;
+  /* background: #999; */
+  margin-left: 95rpx;
+}
+
+.expressRecord-text {
+  position: relative;
+  top: 140rpx;
+  width: 100%;
+  overflow: scroll;
+  margin-left: 30rpx;
+  background-color: rgb(21, 117, 228);
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.expressRecord-title {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.expressRecord-status-time {
+  height: 57.6px;
+  font-size: 25rpx;
+  color: #000;
+}
+
+
+.expressRecord-status {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.expressRecord-status-address {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.expressRecord-dating {
+  position: absolute;
+  height: 100%;
+  /* top: 0;
+  bottom: 0; */
+  left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.expressRecord-date {
+  position: absolute;
+  height: 100%;
+  /* top: 0;
+  bottom: 0; */
+  left: -70rpx;
+  top: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #999;
+}
+
+.expressRecord-date-text {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.expressRecord-date-time {
+  font-size: 20rpx;
+  color: #000;
+}
+
+.getAddress-icon {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #999;
+  font-size: 18rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 71rpx;
+}
+
+.getAddress-text {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+/*智能聚合*/
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.btnImg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.fontset{
+  font-size: 30rpx;
+}
+
+/*时空之间*/
+.classify-prt {
+  margin: 10px;
+  padding-left: 10px;
+  height: 109rpx;
+  line-height: 109rpx;
+  border-bottom: 1rpx solid #EBF3F7;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.classify-item {
+  position: relative;
+  left: 30px;
+  margin: 10px;
+  padding-left: 10px;
+  height: 109rpx;
+  width: 313px;
+  line-height: 109rpx;
+  border-bottom: 1rpx solid #EBF3F7;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}

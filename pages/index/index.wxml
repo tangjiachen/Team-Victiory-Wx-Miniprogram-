@@ -1,0 +1,130 @@
+<view class="page" data-weui-theme="{{theme}}">
+  <!--通知页-->
+  <view wx:if="{{ showPage == 'inform' }}">
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}" style="">
+      <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">最新通知</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">智能聚合</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">时空之间</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+      style="height:{{winHeight}}rpx">
+      <!--最新通知-->
+      <swiper-item data-current="0">
+        <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+          <block wx:for="{{bnrUrl}}" wx:for-index="index">
+            <swiper-item>
+              <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+        <scroll-view scroll-y="true" class="scoll-h" style="width: 95%">
+          <block wx:for="{{[0,1,2]}}" wx:key="*this">
+            <view class="item-ans table">
+              <navigator url="" class="weui-media-box weui-media-box_appmsg inform" hover-class="weui-cell_active">
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                  <view class="weui-media-box__desc desc" style="text-align: center">
+                    由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                  <view class="weui-media-box__desc">老徐 2020-12-21</view>
+                </view>
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                  <image class="weui-media-box__thumb"
+                    src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4049030551,3298320329&fm=15&gp=0.jpg" />
+                </view>
+              </navigator>
+            </view>
+          </block>
+        </scroll-view>
+      </swiper-item>
+      <!--智能聚合-->
+      <swiper-item data-current="1">
+        <scroll-view scroll-y="true" class="scoll-h">
+            <view class="item-ans">
+              <button>
+                <image class="btnImg" mode="aspectFit" src="/components/static/img/考试.svg"></image>
+                <view class="fontset">考试</view>
+              </button>
+              <button>
+                <image class="btnImg" mode="aspectFit" src="/components/static/img//知识竞赛.svg"></image>
+                <view class="fontset">竞赛</view>
+              </button>
+              <button>
+                <image class="btnImg" mode="aspectFit" src="/components/static/img/四六级查询.svg"></image>
+                <view class="fontset">四六级</view>
+              </button>
+            </view>
+            <view class="item-ans">
+              <button wx:for="{{nlpsort}}" data-index="{{index}}" wx:item="item" wx:key>
+                <image class="btnImg" mode="aspectFit" src="/components/static/img/考试.svg"></image>
+                <view class="fontset">{{item.text}}</view>
+              </button>
+            </view>
+        </scroll-view>
+      </swiper-item>
+      <!--时空之间-->
+      <swiper-item data-current="2">
+        <view class="classify-prt" data-index="0" bindtap='changeToggle'>类别1</view>
+        <block wx:for="{{list01}}" wx:key='index'>
+          <view class="classify-item" hidden="{{!selectedFlag[0]}}">展开1</view>
+        </block>
+        <view class="classify-prt" data-index="1" bindtap='changeToggle'>类别2</view>
+        <block wx:for="{{list02}}" wx:key='index'>
+          <view class="classify-item" hidden="{{!selectedFlag[1]}}">展开2</view>
+        </block>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--小知老师-->
+  <view wx:if="{{ showPage ==  'xiaozhi'}}">
+    <view class="page_hd">
+      <view class="page_title">
+        你好，这里是小知老师。
+      </view>
+      <view class='page_desc'>
+        我是智能IP虚拟人，能够以更生动的形象为您提供更好的信息导航服务
+      </view>
+    </view>
+  </view>
+
+  <!--死线抽绎-->
+  <view wx:if="{{ showPage == 'cs' }}">
+    <view class="page__hd" style="padding-bottom: 0; overflow-y: auto; height： 100%">
+
+      <view class='expressRecord-getAddress'>
+          <view class='expressRecord-top'>
+            <view class='getAddress-icon'>
+              now
+            </view>
+            <view class='getAddress-text'>通知千万，只取一瓢</view>
+          </view>
+        </view>
+
+      <block wx:for="{{ dead_line }}" wx:for-index="index">
+
+        <view class='expressRecord-single-close'>
+          <view class='expressRecord-single-noReach-online-top-close'>
+            <view class='online-top-close'></view>
+            <view class='dot-close'></view>
+          </view>
+          <view class='expressRecord-text'>
+            <view class='expressRecord-title'>{{ item.title }}</view>
+            <view class='expressRecord-status-time' style="width: 180px; WORD-BREAK: break-all; WORD-WRAP: break-word">
+              <text>{{ item.desc }}\n</text>
+              <text>截至时间：{{ item.interval_start }}\n起始时间：{{ item.interval_stop }}</text>
+            </view>
+          </view>
+          <view class='expressRecord-date'>
+            <view class='expressRecord-date-text'>
+              {{ item.date }}
+            </view>
+            <view class='expressRecord-date-time'>
+              {{ item.time }}
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <mp-tabbar class="tabbar" list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view>
