@@ -7,6 +7,12 @@
 
 项目效果截图：
 ![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%871.jpg)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%872.png)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%873.jpg)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%874.jpg)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/图片5.jpg)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%876.jpg)
+
 
 
 
