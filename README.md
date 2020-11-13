@@ -6,17 +6,16 @@
 在日常学工管理过程中，教师群发的通知经常有学生不注意，事后又来问，导致教师经常重复回答这类问题，另外很多学生经常对同一通知有各类雷同的疑问。因此，本项目基于腾讯云的对话机器人（Conversation Robot，ICR）开发了AI智能解答功能，实现全天候全自动的在线解答。另外通过腾讯AI开放平台的IP 虚拟人（IP Virtual Human，IVH）API开发了虚拟辅导员，为学生提供一对一的专属在线问答服务，在智能语音客服的基础上引入虚拟形象，提供及时疑问答复的同时，营造更加亲和自然的小程序应用体验。
 
 项目效果截图：
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%871.jpg)
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%872.png)
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%873.jpg)
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%874.jpg)
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/图片5.jpg)
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%9B%BE%E7%89%876.jpg)
+![Image text]https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/4.PNG)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/5.PNG)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/6.PNG)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/8.PNG)
 
 
 
 
 项目小程序链接/二维码：
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E8%83%9C%E5%88%A9%E9%98%9F%E4%BD%93%E9%AA%8C%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
 
 
 部署教程： 
