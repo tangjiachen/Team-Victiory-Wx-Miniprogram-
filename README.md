@@ -28,9 +28,7 @@
 
 4.外部服务：本项目涉及微信对话开放平台的chatbot插件以及腾讯云AI平台的NLP外部接口服务。
 
-5.需要创建集合inform，并且添加字段SN, artical, datetime, src, title, unit。
-
-5.云数据库：需要创建集合inform，并且添加字段SN, artical, datetime, src, title, unit。
+5.云数据库：需要创建集合infrom_geo,并且添加字段SN,artical,datetime,iconpath,id,label,latitude,longtitude,name,picture,src,text,title,unit
 
 6.后台服务配置：1.云数据库环境id 2.云数据库集合 3.微信对话chatbot插件id。
 
