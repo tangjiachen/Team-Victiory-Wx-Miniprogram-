@@ -2,6 +2,7 @@
 更新
 小知老师增加了新的对话交互功能，包括四六级，奖学金。
 AIdeadline提醒功能变得更加智能。
+该2.0 beta版本为小知老师正式发布版本，请移步https://github.com/tangjiachen/Team-Victiory-Wx-Miniprogram-/tree/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88beta_2查看源代码以及进行二次开发法
 
 修复
 地图坐标有时候会无法正常显示的问题。
