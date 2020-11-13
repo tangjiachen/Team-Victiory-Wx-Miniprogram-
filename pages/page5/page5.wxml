@@ -1,0 +1,16 @@
+<!--pages/page5/page5.wxml-->
+<block bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="content">时间轴</view>
+</block>
+<view class="cu-timeline">
+  <view class="cu-time">2020</view>
+  <view class="cu-item cur cuIcon-noticefill" wx:for="{{articleList}}" wx:key="key" wx:for-item="item">
+    <view class="cu-item" data-title="{{item.title}}" data-article="{{item.article}}" data-imageurl="{{item.picture}}"
+      data-iconpath="{{item.iconPath}}" bindtap="gotoViewNote">
+      <view class="content bg-green shadow-blur">
+        <text>{{item.datetime}}</text>
+        <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
