@@ -15,7 +15,7 @@
 
 
 项目小程序链接/二维码：
-![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E8%83%9C%E5%88%A9%E9%98%9F%E4%BD%93%E9%AA%8C%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+![Image text](https://www.et.ynu.edu.cn/appdd/uploads/20181060080/8/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88%E4%BD%93%E9%AA%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F.jpg)
 
 
 部署教程： 
