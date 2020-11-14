@@ -1,5 +1,5 @@
 部署教程： 
-1.可通过访问Tangjiachen的github的Team-Victiory-Wx-Miniprogram仓库下载代码，也可以通过访问https://github.com/tangjiachen/Team-Victiory-Wx-Miniprogram-/tree/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88beta_2或者通过git命令行下在本项目源代码。
+1.可通过访问tangjiachen的github的Team-Victiory-Wx-Miniprogram仓库下载代码，也可以通过访问https://github.com/tangjiachen/Team-Victiory-Wx-Miniprogram-/tree/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88beta_2或者通过git命令行下在本项目源代码。
 
 2.下载小知老师项目源代码之后，创建一个新文件夹将所有项目源文件放入该文件夹下，然后打开微信开发者工具，选择新创建的文件夹，进入包含app.js的下一集子目录后导入该项目，将开发者APPID更换为自己的APPID。 
 
