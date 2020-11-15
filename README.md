@@ -1,4 +1,7 @@
-本版本并非正式发布版本的源代码，真是参赛版本的源代码请看小知老师beta2版本，地址为：https://github.com/tangjiachen/Team-Victiory-Wx-Miniprogram-/tree/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88beta_2
+本版本并非正式发布版本的源代码，正式参赛版本的源代码请看小知老师beta2版本，地址为：https://github.com/tangjiachen/Team-Victiory-Wx-Miniprogram-/tree/%E5%B0%8F%E7%9F%A5%E8%80%81%E5%B8%88beta_2
+
+即在该项目分支下小知老师——beta2分支下。
+
 项目名称：小知老师——AI智能学工通知平台
 
 项目介绍：小知老师基于微信小程序平台与腾讯云技术开发的一款智能学工通知平台，旨在为云南大学师生用户提供高效快捷，可交互式的通知查看与使用体验。
